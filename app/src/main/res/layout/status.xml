@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:gravity="center_horizontal"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/main_screen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="16dp"
+       >
+
+        <LinearLayout
+            android:id="@+id/collector_info_layout"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:gravity="center"
+            android:visibility="gone"
+         >
+
+            <TextView
+                android:id="@+id/collector_info_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:autoLink="web"
+                tools:text="Collector Info" />
+
+            <ImageView
+                android:id="@+id/collector_info_icon"
+                android:adjustViewBounds="false"
+                android:layout_width="24dp"
+                android:layout_height="match_parent"
+                android:layout_marginVertical="1dp"
+                android:layout_marginHorizontal="2dp"
+                tools:src="@drawable/ic_apps"
+                tools:tint="?attr/colorAccent" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/interface_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            tools:text="Capturing from eth0..."
+            tools:visibility="gone"
+            />
+
+        <TextView
+            android:id="@+id/status_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/rounded_button_background"
+            android:gravity="center"
+            android:text="@string/ready"
+            android:textSize="20sp"
+            android:focusable="false"
+            style="@style/MDMActionButton"
+             />
+        <TextView
+            android:id="@+id/startmdm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/rounded_button_background"
+            android:gravity="center"
+            android:text="@string/mstartmdm"
+            android:textSize="20sp"
+            android:focusable="false"
+            style="@style/MDMActionButton"
+             />
+        <TextView
+            android:id="@+id/removemdm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/rounded_button_background"
+            android:gravity="center"
+            android:text="@string/mremovemdm"
+            android:textSize="20sp"
+            android:focusable="false"
+            style="@style/MDMActionButton"
+            />
+        <TextView
+            android:id="@+id/bufirewall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/rounded_button_background"
+            android:gravity="center"
+            android:text="@string/firewall"
+            android:textSize="20sp"
+            android:focusable="false"
+            style="@style/MDMActionButton"
+        />
+        <TextView
+            android:id="@+id/bumalware"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/rounded_button_background"
+            android:gravity="center"
+            android:text="@string/malware_detection"
+            android:textSize="20sp"
+            android:focusable="false"
+            style="@style/MDMActionButton"
+        />
+        <TextView
+            android:id="@+id/budecrypt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/rounded_button_background"
+            android:gravity="center"
+            android:text="@string/decryption_rules"
+            android:textSize="20sp"
+            android:focusable="false"
+            style="@style/MDMActionButton"
+        />
+        <TextView
+            android:id="@+id/bulog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/rounded_button_background"
+            android:gravity="center"
+            android:text="@string/app_log"
+            android:textSize="20sp"
+            android:focusable="false"
+            style="@style/MDMActionButton"
+        />
+        <LinearLayout
+            android:id="@+id/act_block_googlevoice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/card_bg"
+            android:orientation="vertical"
+            android:padding="20dp"
+            android:elevation="4dp"
+            android:layout_marginBottom="20dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:orientation="horizontal">
+                
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="⚠️ הבהרה ואזהרה"
+                android:textSize="15sp"
+                />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="end"
+                    android:orientation="horizontal">
+                <ImageView
+                    android:id="@+id/img_hide_block_googlevoice"
+                    android:tint="#ff0000"
+                    android:layout_width="18sp"
+                    android:layout_height="18sp"
+                    android:src="@android:drawable/ic_menu_close_clear_cancel" />
+                </LinearLayout>
+            </LinearLayout>
+            <TextView
+                
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="חסימת הדומיין המסוכן של הזיהוי הקולי של גוגל"
+                android:textSize="18sp"/>
+
+            <TextView
+                
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="הדומייין של החיפוש הקולי של גוגל הוא מאוד מסוכן ומאפשר גם לקבל תוצאות חיפוש בגוגל. אם אתה לא משתמש עם הדומיין לזיהוי קולי ואתה לא חוסם את אפליקציית גוגל, אתה חייב להוסיף את הדומיין לחומת האש ברשימה השחורה!"
+                android:layout_marginTop="4dp"/>
+            <Button
+                android:id="@+id/btn_block_googlevoice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="לחץ כאן לחסימת הדומיין המסוכן"
+                android:background="@drawable/rounded_button_background_reverse"
+                android:textColor="?colorBackItem"/>
+        </LinearLayout>
+        <TextView
+            android:id="@+id/buinstruction"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/rounded_button_background"
+            android:gravity="center"
+            android:text="@string/buinstructionvpn"
+            android:textSize="20sp"
+            android:focusable="false"
+            style="@style/MDMActionButton"
+        />
+        <!--TextView
+            android:id="@+id/tva"
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="200dp"
+            android:background="@drawable/rounded_bg"
+            android:gravity="center"
+            android:text="@string/mchangepwd"
+            android:textSize="20sp"
+            android:focusable="false"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <TextView
+            android:id="@+id/tvb"
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="250dp"
+            android:background="@drawable/rounded_bg"
+            android:gravity="center"
+            android:text="@string/mupdate"
+            android:textSize="20sp"
+            android:focusable="false"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" /-->
+        <!--TextView
+            android:id="@+id/tvc"
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="200dp"
+            android:background="@drawable/rounded_bg"
+            android:gravity="center"
+            android:text="mode"
+            android:textSize="20sp"
+            android:focusable="false"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" /-->
+        <!--TextView
+            android:id="@+id/tvd"
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="300dp"
+            android:background="@drawable/rounded_bg"
+            android:gravity="center"
+            android:text="refresh"
+            android:textSize="20sp"
+            android:focusable="false"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" /-->
+        <LinearLayout
+            android:id="@+id/quick_settings"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="35dp"
+            android:padding="10dp"
+            android:visibility="gone"
+            >
+
+            <LinearLayout
+                android:id="@+id/dump_mode_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:spinnerMode="dialog"
+                tools:listitem="@layout/quick_settings_item"
+                android:prompt="@string/traffic_dump"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:id="@+id/app_filter_text"
+                    layout="@layout/quick_settings_item"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="50dp" />
+
+                <LinearLayout
+                    android:id="@+id/app_filter_switch"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true" />
+
+                <TextView
+                    android:id="@+id/app_filter_root_decryption_warning"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/app_filter_text"
+                    android:paddingHorizontal="10dp"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/decryption_no_filter_warn"
+                    android:textColor="@color/warning"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
